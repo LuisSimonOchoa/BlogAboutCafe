@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <meta name="description" content="Página web de Blog de Café">
+    <link rel="stylesheet" href="./build/css/app.css">
+</head>
+<body>
+    <header class="header">
+        <div class="navegacion contenedor">
+            <a href="index.html">
+                <h1 class="navegacion__titulo">Blog<span class="navegacion__span">DeCafé</span></h1>
+            </a>
+            <nav class="barra">
+                <a class="barra__enlace" href="nosotros.html">Nosotros</a>
+                <a class="barra__enlace" href="cursos.html">Cursos</a>
+                <a class="barra__enlace" href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+        <div class="banner">
+            <h2 class="banner__titulo">Blog de café con consejos y cursos</h2>
+            <p class="banner__texto">Aprende de los expertos con las mejores recetas y consejos</p>
+        </div>
+    </header>
+
+    <main class="contacto contenedor">
+        <h3 class="contacto__titulo">Contacto</h3>
+        <div class="contacto__imagen"></div>
+        <form class="formulario">
+            <div class="formulario__campo">
+                <label for="nombre" class="formulario__label">Nombre</label>
+                <input
+                    type="text"
+                    id="nombre"
+                    placeholder="Tu Nombre"
+                    class="formulario__input"
+                >
+            </div>
+            <div class="formulario__campo">
+                <label for="correo" class="formulario__label">E-mail</label>
+                <input
+                    type="email"
+                    id="correo"
+                    placeholder="Tu E-mail"
+                    class="formulario__input"
+                >
+            </div>
+            <div class="formulario__campo">
+                <label for="mensaje" class="formulario__label">Mensaje</label>
+                <textarea id="mensaje" class="formulario__input formulario__input--area"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Enviar" class="boton" id="boton">
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="navegacion contenedor">
+            <a href="index.html">
+                <h1 class="navegacion__titulo">Blog<span class="navegacion__span">DeCafé</span></h1>
+            </a>
+            <nav class="barra">
+                <a class="barra__enlace" href="nosotros.html">Nosotros</a>
+                <a class="barra__enlace" href="cursos.html">Cursos</a>
+                <a class="barra__enlace" href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="build/js/bundle.min.js"></script>
+</body>
+</html>

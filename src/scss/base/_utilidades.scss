@@ -1,0 +1,45 @@
+.columnas-2-1 {
+    padding-top: $separacion / 2;
+    @include tablet {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+}
+
+.boton {
+    color: $blanco;
+    background-color: $negro;
+    padding: 1rem 2rem;
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+    font-weight: $bold;
+    width: 100%;
+    &--borrow {
+        background-color: $primario;
+    }
+    @include tablet {
+        width: auto;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.columnas-1-1 {
+    @include tablet {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 4rem;
+    }
+}
+
+.columnas-1-2 {
+    @include tablet {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 4rem;
+    }
+}

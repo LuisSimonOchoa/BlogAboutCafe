@@ -1,0 +1,64 @@
+.contacto {
+    padding-top: $separacion / 2;
+    padding-bottom: $separacion / 2;
+    &__titulo {
+        text-align: center;
+        margin-bottom: $separacion / 2;
+    }
+    &__imagen {
+        background-image: url(../img/contacto.jpg);
+        height: 40rem;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}
+
+.formulario {
+    background-color: $blanco;
+    padding: $separacion;
+    width: 95%;
+    max-width: 110rem;
+    margin: -$separacion auto 0 auto;
+    &__campo {
+        margin-bottom: $separacion / 2;
+        display: flex;
+        align-items: center;
+    }
+    &__label {
+        flex: 0 0 9rem;
+    }
+    &__input {
+        flex: 1;
+        border: .5px solid $gris;
+        padding: .5rem .2rem;
+        width: 10rem;
+        &--area {
+            height: 10rem;
+        }
+        @include tablet {
+            width: auto;
+        }
+    }
+}
+
+.mensaje {
+    display: flex;
+    justify-content: center;
+    &__error {
+        background-color: #8C0000;
+        color: $blanco;
+        display: inline-block;
+        padding: 1rem 2rem;
+        text-align: center;
+        margin-top: 0;
+    }
+    &__right {
+        background-color: #939B62;
+        color: $blanco;
+        display: inline-block;
+        padding: 1rem 2rem;
+        text-align: center;
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,11 @@
+.nosotros {
+    padding-top: $separacion / 2;
+    padding-bottom: $separacion / 2;
+    &__titulo {
+        text-align: center;
+        margin-bottom: $separacion / 2;
+    }
+    &__texto {
+        margin-top: 0;
+    }
+}

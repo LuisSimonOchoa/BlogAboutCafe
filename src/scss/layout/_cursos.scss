@@ -1,0 +1,28 @@
+.cursos {
+    padding-top: $separacion / 2;
+    padding-bottom: $separacion / 2;
+    &__titulo {
+        text-align: center;
+        margin-bottom: $separacion;
+    }
+    &__span {
+        font-weight: $bold;
+    }
+}
+
+.curso {
+    margin-bottom: $separacion / 2;
+    border-bottom: 1px solid $gris;
+    padding-bottom: $separacion / 2;
+    &:last-of-type {
+        margin-bottom: 0;
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    &__subtitulo {
+        margin-top: 2rem;
+        @include tablet {
+            margin-top: 0;
+        }
+    }
+}
